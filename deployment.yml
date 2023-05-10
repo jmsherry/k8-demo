@@ -21,7 +21,8 @@ spec:
         - name: front-end
           # image: jmsherry/basic-node-server:0.0.11
           image: basic-node-server:0.0.1
-          # imagePullPolicy: Always
+          # imagePullPolicy: Always 
+          # ^^ For remote deploy
           ports:
             - containerPort: 3000
           resources:
