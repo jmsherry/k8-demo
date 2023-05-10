@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: basic-server
+  # namespace: demo
+  labels:
+    app: web
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+        - name: front-end
+          image: basic-node-server:0.0.1
+          imagePullPolicy: Never # stops it pulling from remote
+          ports:
+            - containerPort: 80
+      # imagePullSecrets:
+      #   - name: regcred

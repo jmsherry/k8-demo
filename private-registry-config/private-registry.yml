@@ -1,0 +1,16 @@
+# make sure you have the registry:2 image locally
+# docker-compose -f private-registry-config/private-registry.yml up -d
+version: "3.0"
+
+services:
+  registry:
+    container_name: docker-registry
+    restart: always
+    image: registry:2
+    ports:
+      - 6000:5000
+    volumes:
+      - docker-registry-data:/var/lib/registry
+
+volumes:
+  docker-registry-data: {}
