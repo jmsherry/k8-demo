@@ -7,7 +7,7 @@ metadata:
     app: web
 spec:
   # modify replicas according to your case
-  replicas: 3
+  replicas: 10
   selector:
     matchLabels:
       tier: frontend
@@ -21,6 +21,6 @@ spec:
           image: basic-node-server:0.0.1
           imagePullPolicy: Never # stops it pulling from remote
           ports:
-            - containerPort: 80
+            - containerPort: 3000
       # imagePullSecrets:
       #   - name: regcred
