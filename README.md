@@ -13,3 +13,4 @@ docker build -t basic-node-server:0.0.2 ./app
 ```
 
 3 different version should do. This just represents you making changes to your app.
+
