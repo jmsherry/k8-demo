@@ -1,18 +1,12 @@
-/* body {
-  background-color: #000;
-  color: #fff;
-} */
-
-html {
-  font-size: calc(100vmax / 1500 * 100);
-}
-
+html,
 body {
-  height: 100vh;
-  background-color: #e2aa01;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: calc(100vmax / 1500 * 100);
+  min-height: 100dvh;
+  max-height: 100dvh;
+  height: 100dvh;
+  background-color: hsl(45, 99%, 45%);
+  display: grid;
+  place-content: center;
   position: relative;
 }
 

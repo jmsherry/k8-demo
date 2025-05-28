@@ -86,6 +86,6 @@ spec:
   loadBalancerIP: ""
 
 ```
-10. Create the service `k apply -f gke-service.yml`
+10. Create the service `k apply -f gke-service.yml` (or use dashboard buttons)
 11. Go to the service and go to the external IP link for the load-balancer
 12. Enjoy.

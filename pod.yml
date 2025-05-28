@@ -12,7 +12,7 @@ spec:
       image: basic-node-server:0.0.1
       imagePullPolicy: Never # stops it pulling from remote
       ports:
-        - containerPort: 8080
+        - containerPort: 3000
   # imagePullSecrets:
   #   - name: regcred
 ---

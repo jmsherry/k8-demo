@@ -6,3 +6,8 @@
 2. `kubectl -n kube-system apply -f admin-role-binding.yml`
 3. `kubectl create token admin-user -n kube-system` (from <https://mvallim.github.io/kubernetes-under-the-hood/documentation/kube-dashboard.html>)
 4. Copy massive token and put it into dashboard
+
+
+
+
+

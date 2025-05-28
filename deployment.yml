@@ -19,8 +19,10 @@ spec:
     spec:
       containers:
         - name: front-end
-          image: jmsherry/basic-node-server:0.0.17
-          # image: basic-node-server:0.0.2
+          # image: basic-node-server:0.0.1
+          # imagePullPolicy: Never 
+          # ^^ For local deploy
+          image: jmsherry/basic-node-server:0.0.19
           imagePullPolicy: Always 
           # ^^ For remote deploy
           ports:
@@ -30,7 +32,6 @@ spec:
             # based on CPU utilization
             requests:
               cpu: "250m"
-            requests:
               memory: "64Mi"
               cpu: "250m"
             limits:
