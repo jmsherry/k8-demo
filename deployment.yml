@@ -19,11 +19,11 @@ spec:
     spec:
       containers:
         - name: front-end
-          # image: basic-node-server:0.0.1
-          # imagePullPolicy: Never 
+          image: basic-node-server:0.0.3
+          imagePullPolicy: Never 
           # ^^ For local deploy
-          image: jmsherry/basic-node-server:0.0.19
-          imagePullPolicy: Always 
+          # image: jmsherry/basic-node-server:0.0.19
+          # imagePullPolicy: Always 
           # ^^ For remote deploy
           ports:
             - containerPort: 3000
@@ -33,7 +33,6 @@ spec:
             requests:
               cpu: "250m"
               memory: "64Mi"
-              cpu: "250m"
             limits:
               memory: "128Mi"
               cpu: "500m"
