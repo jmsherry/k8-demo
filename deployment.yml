@@ -19,10 +19,10 @@ spec:
     spec:
       containers:
         - name: front-end
-          image: basic-node-server:0.0.3
+          image: basic-node-server:0.0.1
           imagePullPolicy: Never 
           # ^^ For local deploy
-          # image: jmsherry/basic-node-server:0.0.19
+          # image: jmsherry/basic-node-server:0.0.1
           # imagePullPolicy: Always 
           # ^^ For remote deploy
           ports:
